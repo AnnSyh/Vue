@@ -1,0 +1,19 @@
+
+// Custom Bootstrap variable overrides go first
+$body-bg:  yellow;
+$body-color: red;
+
+//** Global textual link color.
+$link-color:   green;
+
+
+
+
+// Then include the following
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-vue/src/index.scss";
+
+// And define any of your custom or additional CSS/SCSS here,
+// or via an @import
+@import "scss/variables";
+@import "scss/main";

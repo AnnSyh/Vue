@@ -1,0 +1,78 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<style type="text/css">
+  .bg {
+    background-color: #1A1A1A;
+    color: #fff;
+    font-family: "Courier Prime", monospace;
+    padding: 15px;
+  }
+  .bg span {font-family: "Courier Prime", monospace !important;}
+
+  @media(max-width:500px){
+    .bg {font-size:10px;}
+  }
+  nobr {
+    font-family: "Courier Prime", monospace;
+  }
+
+  .gray {
+    font-family: "Courier Prime", monospace !important;
+    color: #75715D;
+  }
+
+  .red {
+    font-family: "Courier Prime", monospace !important;
+    color: #EC2171;
+  }
+
+  .blue {
+    font-family: "Courier Prime", monospace !important;
+    color: #60D9F1;
+  }
+  .yellow {
+    font-family: "Courier Prime", monospace !important;
+    color: #E7DD6C;
+  }
+
+  .green {
+    font-family: 'PT Serif', Georgia, serif;
+    color: #A5E40F;
+  }
+
+  .violet {
+    font-family: "Courier Prime", monospace !important;
+    color: #AF7DFF;
+  }
+
+  /*фон #1A1A1A*/
+  /*белый #FFFFFF*/
+  /*серый  #75715D*/
+  /*розовый #EC2171*/
+  /*голубой #60D9F1*/
+  /*зеленый #A5E40F*/
+  /*желтый #E7DD6C*/
+  /*сиреневый #AF7DFF*/
+
+</style>
+<div class="bg">
+  <nobr><span class="gray">1&nbsp;&nbsp;#!/usr/bin/python3</span><nobr></br>
+  <nobr><span class="gray">2&nbsp;</span> <span class="red">from</span> enum <span class="red">import</span> Enum<nobr></br>
+  <nobr><span class="gray">3&nbsp;</span> PI = <span class="violet">3.141592654</span><nobr></br>
+  <nobr><span class="gray">4&nbsp;</span> <span class="blue">class</span> <span class="green">ItalianBool</span>(Enum):<nobr></br>
+  <nobr><span class="gray">5&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;true <span class="red">=</span> <span class="green">'si'</span><nobr></br>
+  <nobr><span class="gray">6&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;false <span class="red">=</span> <span class="green">'no'</span><nobr></br>
+  <nobr><span class="gray">7&nbsp;</span> size <span class="red">=</span> [<span class="green">'medium'</span>, <span
+  class="green">'big'</span>, <span class="green">'small'</span>]<nobr></br>
+  <nobr><span class="gray">8&nbsp;</span> revolution <span class="red">=</span> <span class="green">'revolution'</span><nobr></br>
+  <nobr><span class="gray">9&nbsp;</span> quiz <span class="red">=</span> <span class="green">'quiz'</span><nobr></br>
+  <nobr><span class="gray">10</span> mission <span class="red">=</span> <span class="green">'in'</span><nobr></br>
+  <nobr><span class="gray">11</span> mission <span class="red">+=</span> quiz[0:3]<nobr></br>
+  <nobr><span class="gray">12</span> mission <span class="red">+=</span> ItalianBool.true.value<nobr></br>
+  <nobr><span class="gray">13</span> mission <span class="red">+=</span> revolution[6:]<nobr></br>
+  <nobr><span class="gray">14</span> destination = []<nobr></br>
+  <nobr><span class="gray">15</span> destination.<span class="blue">append</span>(size[int(PI -1)])</br></nobr>
+  <nobr><span class="gray">16</span> destination.<span class="blue">append</span>(mission)<nobr></br>
+  <nobr><span class="gray">17</span> destination.<span class="blue">append</span>(<span class="green">'room'</span>)<nobr></br>
+  <nobr><span class="gray">18</span> <span class="red">print</span>(destination)<nobr></br>
+</div>
