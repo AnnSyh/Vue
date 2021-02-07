@@ -1,7 +1,6 @@
 <template>
   <div>
     <!-- {{ crumbs }} -->
-    <br><br>
     <div class="container">
        <b-breadcrumb :items="crumbs"/>
     </div>
@@ -29,9 +28,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-.container{
-  margin: auto;
-  width: 50%
-}
-</style>
+

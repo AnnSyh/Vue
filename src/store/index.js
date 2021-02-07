@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import tabs from './modules/tabs'
+import comments from './modules/comments'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store( {
     modules: {
-        tabs
+        comments
     }
 } )

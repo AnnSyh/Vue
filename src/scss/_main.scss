@@ -1,5 +1,11 @@
 
-ul.links li { 
+ul.links li {
     display: inline-block;
     margin: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid blue;
 }

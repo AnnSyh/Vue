@@ -2,15 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import IndexPage from '@/components/IndexPage.vue'
-import Сomands from '@/components/Comands.vue'
-import Players from '@/components/Players.vue'
-import Trainers from '@/components/Trainers.vue'
-import Staff from '@/components/Staff.vue'
+import Login from '@/components/Login.vue'
+import Register from '@/components/Register.vue'
 
-// Elon Musk's Components
-import HelloElon from '@/components/ElonMusk/HelloElon.vue'
-import HelloElonCompany from '@/components/ElonMusk/HelloElonCompany.vue'
-import HelloElonCompanyProduct from '@/components/ElonMusk/HelloElonCompanyProduct.vue'
+
+
 
 Vue.use(Router)
 
@@ -24,55 +20,18 @@ const router = new Router({
       }
     },
     {
-      path: '/comands',
-      component: Сomands,
+      path: '/login',
+      component: Login,
       meta: {
-        breadCrumb: 'Сomands'
-      },
-      children: [
-        {
-          path: 'players',
-          component: Players,
-          meta: {
-            breadCrumb: 'Players'
-          }
-        },
-        {
-          path: 'trainers',
-          component: Trainers,
-          meta: {
-            breadCrumb: 'Trainers'
-          }
-        },
-        {
-          path: 'staff',
-          component: Staff,
-          meta: {
-            breadCrumb: 'Staff'
-          }
-        }        
-      ]
+        breadCrumb: 'Login'
+      }
     },
     {
-      path: '/matches',
-      component: HelloElon,
+      path: '/register',
+      component: Register,
       meta: {
-        breadCrumb: 'Matches'
-      },
-      children: [
-        {
-          path: ':company',
-          component: HelloElonCompany,
-          props: true,
-          children: [
-            {
-              path: ':product',
-              component: HelloElonCompanyProduct,
-              props: true
-            }
-          ]
-        }
-      ]
+        breadCrumb: 'Register'
+      }
     },
     {
       path: '*',
