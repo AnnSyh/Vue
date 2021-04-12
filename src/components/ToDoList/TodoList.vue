@@ -30,8 +30,8 @@ export default {
   },
   data() {
     return {
-      newTodoText: "",
-      newTodoTime: "",
+      newTodoText: "444",
+      newTodoTime: "555",
       todos: [
         {
           id: nextTodoId++,

@@ -43,9 +43,6 @@ export default {
     TodoList,
   },
   computed: {
-    tabs() {
-      return this.$store.getters.tabs
-    },
     comments() {
       return this.$store.getters.comments
     }

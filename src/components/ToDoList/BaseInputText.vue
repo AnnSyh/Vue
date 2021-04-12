@@ -1,20 +1,33 @@
 <template>
-  <div style="display: flex">
-    <input type="text" class="input" v-model="value"      v-on="listeners" />
-<!--    <input type="data" class="input" v-model="value.data" v-on="listeners" />-->
+  <div>
+    <div style="display: flex;" >
+      <p>{{text}}</p>
+    </div>
+    <div style="display: flex;" >
+      <input
+        type="text"
+        class="input"
+        v-model="text"
+        v-on="listeners"
+      />
+      <input
+        type="data"
+        class="input"
+        v-model="text"
+        v-on="listeners" />
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    value: {
+    text: {
       type: String,
-      // default: () => {
-      //   id: 1,
-      //   text: "default-text"
-      //   time: "default-time"
-      // }
+      default: () => {
+         "'default-text'"
+        // time: "default-time"
+      }
     },
   },
   computed: {
@@ -23,7 +36,7 @@ export default {
         // Pass all component listeners directly to input
         ...this.$listeners,
         // Override input listener to work with v-model
-        input: (event) => this.$emit("input", event.target.value),
+        input: (event) => this.$emit("input", event.target.text),
       };
     },
   },
